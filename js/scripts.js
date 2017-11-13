@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
- 	"use strict";	
+ 	"use strict";
 
  	$(window).load(function() {
 
@@ -8,7 +8,7 @@ $(document).ready(function(){
 		$('#status').fadeOut();
 		$('#preloader').delay(350).fadeOut('slow');
 
-		
+
 		// filter items on button click
 		$('.portfolio-filter').on( 'click', 'a', function(e) {
 			e.preventDefault();
@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 		});
 
-	
+
 
 		// Trigger Resize
 		$(window).trigger("resize");
@@ -32,16 +32,16 @@ $(document).ready(function(){
 	$(".rotate").textrotator({
 		animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
 		separator: ",",
-		speed: 3000 
+		speed: 3000
 	});
 
 
-	// Video Full Height	    
-	$(window).trigger("resize");	
+	// Video Full Height
+	$(window).trigger("resize");
 	$(window).resize(function(){
-	    
+
 	    container_full_height_init();
-	    
+
 	});
 
 
@@ -53,7 +53,7 @@ $(document).ready(function(){
 	        $('.main-nav').removeClass("sticky");
 	    }
 	});
-	
+
 
 	// Off-screen Navigation
  	$('.navbar-toggle, nav').click(function(){
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
 	// Progress Bars
 	var $section = $('#animated-skills').appear(function() {
-    
+
 	    function loadDaBars() {
 	        var bar = $('.progress-bar');
 	        var bar_width = $(this);
@@ -104,7 +104,7 @@ $(document).ready(function(){
 	    autoPlay: 3000,
 	    pagination: false,
 	    itemsCustom: [
-	      [0, 2],      
+	      [0, 2],
 	      [450, 2],
 	      [700, 3],
 	      [1000, 3],
@@ -142,13 +142,13 @@ $(document).ready(function(){
 
 	// Gallery Post
 	$("#owl-slider-small-img, #owl-slider-one-img").owlCarousel({
- 
+
       navigation: true,
       slideSpeed: 300,
       paginationSpeed: 400,
       singleItem: true,
       navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
- 
+
  	});
 
 
@@ -167,7 +167,7 @@ $(document).ready(function(){
 		e.preventDefault();
 
 		var $this = $(this);
-		
+
 		$.ajax({
 			type: "POST",
 			url: 'contact.php',
@@ -206,7 +206,7 @@ $(document).ready(function(){
 			}
 		}, false );
 	}
-	
+
 })();
 
 $(window).scroll(function(event){
