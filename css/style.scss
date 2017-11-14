@@ -740,7 +740,7 @@ nav ul li.active > a {
 }
 
 .testimonial-details {
-  text-align: justify;
+  //text-align: justify;
   padding-left: 170px;
   margin-top: 10px;
 }
@@ -1534,4 +1534,21 @@ blockquote > p {
 
 .our-team {
   padding-bottom: 50px;
+}
+
+.testimonial-socials {
+  clear: left;
+  float: left;
+  font-size: 1.4em;
+  margin-top: 10px;
+
+  .fa-twitter-square { color: #1da1f2 }
+
+  a {
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
