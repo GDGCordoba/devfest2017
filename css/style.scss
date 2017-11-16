@@ -1525,10 +1525,21 @@ blockquote > p {
 
   .sponsors-images {
     margin-top: 30px;
-  }
 
-  .col-md-4 a {
-    line-height: 108px;
+    & > .row > div {
+      text-align: center;
+
+      a {
+        line-height: 140px;
+
+        img {
+          max-height: 140px;
+          max-width: 100%;
+          height: auto;
+          width: auto;
+        }
+      }
+    }
   }
 }
 
