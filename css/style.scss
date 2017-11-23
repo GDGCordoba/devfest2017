@@ -1578,6 +1578,18 @@ blockquote > p {
   }
 }
 
+@media (max-width: 528px) {
+  .testimonial-socials {
+    float: right;
+  }
+
+  .testimonials-box img {
+    max-width: 80%;
+    height: 150px;
+    width: auto;
+  }
+}
+
 .members {
   justify-content: center;
 }
